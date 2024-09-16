@@ -1,0 +1,20 @@
+/* CSS'de Yorum satırı */
+/*
+    Etiket ismine göre css verirsek o etiketin kullanıldığı her yeri etkiler. Bu da her zaman mantıklı olmayabilir.
+        h2{ ....
+            }
+    Id eşsizdir.  
+        #paragraf{ ....
+                    }
+        <h2 id="paragraf">Eda mühendislik öğrencisidir.</h2>
+  
+    Class birden çok yerde kullanılabilir. Bu classın kullanıldığı her yerde etkiler.  
+        .yazi-ozellik{
+                        }
+        <h2 class=yazi-ozellik>Eda</h2>
+
+    Id ce class aynı anda kullanılabilir.
+
+*/
+
+/* Divler sayesinde kutucuklar oluşturuyoruz.Blok elementtir.*/

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <style>
+
+        /*
+            Margin: Kenarlık ile en dışta bulunan katman arasındaki boşluğu ayarlar.
+            Padding: Kutu içindeki yazıyla kenarlık arasındaki boşluğu ayarlar.
+            right-left-bottom-top
+            Display ile inline ya da block elemente çevrilebilir.
+            Bir etiket inline ise genişlik ve yükseklik versende değişiklik olmaz.
+            inline-block hem yan yana gelebilir hem de block gibi davranır.
+        
+        */
+
+        /*
+            link: İlk hali
+            hover: Üzerine gelindiğinde
+            active: linkin üzerine tıklandığında
+            visited: Site ziyaret edildikten sonra
+        
+        */
+
+        /*
+            Listelerin iconlarıda list-style-type ile değiştirilebilir.
+            Tabloları biçimlendirme var.
+            Z-Index ile iki etiket üst üste koyulabiliyor.
+        */
+
+        /*
+            Kullanılabilmesi için divin sabit bir yüksekliği olmalı.
+            overflow:visible - Default değeri
+            overflow:hidden - Taşan kısmı saklar
+            overflow:scroll - Taşan kısma kaydırma ekler
+            overflow:auto - Taşma varsa scroll ekler
+        */
+
+        .kutu1{
+          /*  background-color:grey;   Arka plan rengi*/
+            background-image: url(resimler/bayrak.png);  /*Arka plan resmi*/
+            background-size: cover;              /*Önce resimle kapladı*/
+            background-position: center;         /*Sonra ortaladı.Daha da hoş oldu*/
+            width: 50%;                       /*Genişlik - Tarayıcının %50 sini kapla demek. Ekran boyutuna göre değişir*/
+            height: 400px;                       /*Yükseklik - Bu yükseklik sabittir*/
+            color:aliceblue;                    /*Yazı rengi*/
+            text-align: center;                 /*Metin hizzalama türü - merkez*/
+            border: 7px solid black;         /*Kenarlık ekler. kalınlığı - tipi - rengi*/
+            border-radius:15px ;                /*Kenarları eğer*/
+            margin-left: 40px;
+            margin-top: 20px;
+            margin-bottom: 50px;
+            font-weight: bold;               /* Yazıyı kalınlaştırır*/
+            font-family: 'Times New Roman', Times, serif ;  /*Yazı tipi*/
+            font-style: italic;             /*Yazıyı italic ya da normal yapar*/
+            text-transform: uppercase;      /*Yazıyı tamamen büyük ya da küçük yazar*/
+            letter-spacing: 2px;        /*Harfler arası boşluk bırakır*/
+            text-decoration:underline;  /*Yazının altını üstünü çizer*/
+            word-spacing: 15px;          /*Kelimelerin arasındaki boşluğu ayarlar*/
+
+        }
+
+        .h1{
+            padding-top: 20px;
+        }
+        
+        /*Dikey Menü*/
+        ul{
+            list-style-type:none;
+        }
+        ul li a{
+            
+                color: white;
+                font-family:Arial, Helvetica, sans-serif;
+                text-decoration: none;
+        }
+
+        ul li{
+            padding: 10px;
+            background-color: #3f3f3f;
+            width: 30%;
+            margin-left: -30px;
+        }
+
+        ul li:hover{
+            background-color: red;
+            transition: 0.5s;
+        }
+
+        i{
+            padding-right: 15px;
+            color: white;
+        } 
+
+
+
+
+       
+
+       
+    </style>
+
+</head>
+<body>
+
+    <div class="kutu1">
+        <h1 class="h1">Türk Bayrağı.</h1>
+        <p>Ne Mutlu Türküm Diyene!!</p>
+    </div>
+
+    
+
+   
+    <ul>
+        <li><i class="fa-solid fa-house"></i><a href="#">Home</a></li>
+        <li><i class="fa-regular fa-newspaper"></i><a href="#">News</a></li>
+        <li><i class="fa-solid fa-address-book"></i><a href="#">Contact</a></li>
+        <li><i class="fa-solid fa-address-card"></i><a href="#">About</a></li>
+    </ul>
+
+ 
+    
+</body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="web programlama , html">
+    <meta name="description" content="html temelleri">
+    <title>HTML</title>
+    <link rel="stylesheet" href="style.css">
+     <style>
+        .divOzellik{
+            width:20%;
+            height:100px;
+            background-color: antiquewhite;
+            text-align: center;
+            margin-bottom: 10px;;
+        }
+        .divOzellik2{
+            width:20%;
+            height:100px;
+            background-color: dodgerblue;
+            text-align: center;
+            margin-bottom: 10px;;
+        }
+        .formDiv{
+            width: 360px;
+            background-color: lightcoral;
+        }
+
+        h2{
+            background-color: blueviolet;
+        }
+
+    </style>
+
+</head>
+    <!--  KISA YOL TUŞLARI
+      1- ALT + SHIFT + F -> Kodları düzenler
+      2- FN + sağ ya da sol ok -> Satır sonuna başına gider
+      3- CTRL + ENTER -> Yeni satır ekler
+      4- CTRL + SHIFT + K -> Satır siler
+      5- CTRL + ALT + aşağı/yukarı tuşları -> İmleci yukarı/aşağı büyütür
+      6- ALT + yukarı/aşağı tuşları -> Satırı kaydırır
+      7- Yazıyı seçip CTRL+D aynı diğer yazıları da seçiyor daha sonra değiştirme
+      ve ekleme yapabilir
+    -->
+<body>
+    <!--yorum satırı-->
+    <P>Paragraf Etiketi. Blog elementtir. (Boş olan kısmıda kullanılmış gibi yapar.)</P>
+    <h1 style="color: blue;">h1 elementi</h1>
+    <h2>h2 elementi</h2>
+    <h3>h3 elementi</h3>
+    <br/> <!-- Bir satır boşluk bırakır-->
+    <h4><mark>h4 elementi</mark></h4>
+    <h5>h5 elementi</h5>
+    <h6><i>h6 elementi</i></h6>
+    <hr/>   <!-- Çizgi ekler-->
+    <p><strong>Eda</strong> - Eda</p>  
+    <p><b><i>Web Programlama</i></b></p>
+     <!-- 
+        Video etiketini ve iframe etiketini gördük.
+        i - italik
+        b - kalın
+        strong - kalın
+        mark - işaretleme
+        center - ortalar
+        Bunlar sonra CSS ile de yapılabilir.
+
+        tr - table row - satır açar
+        td - table data - veri girer
+        th - table header - başlık
+        rowspan - satırları birleştirir
+        colspan - sütınları birleştirir
+-->
+        <center><img src="resimler/bayrak.png" alt="Türk Bayrağı bulunamadı" width="400" height="200">
+        </center>
+
+       Google'a gitmek için <a href="https://www.google.com.tr/?hl=tr">tıklayınız</a> <br/>
+       Ayrı sayfa da açılan Google'a gitmek için <a href="https://www.google.com.tr/?hl=tr" target="_blank">tıklayınız</a> <br/><br/>
+
+      <a href="https://www.youtube.com/" target="_blank"><img src="resimler/youtube.png" alt="İcon bulunamadı" width="80" height="50"></a>
+        <ul>
+            <li>Kahve > Sırasız liste</li>
+        </ul>
+        <ol type="a">
+            <li>Çay > Sıralı liste</li>
+            <li>Limonata</li>
+        </ol>  
+
+        <table border="1"
+                <tr>
+                    <th colspan="3">Product</th>   > <!-- 3 satırı birleştirdi-->
+                </tr>
+                <tr>
+                    <th>No</th>
+                    <th>P.Name</th>
+                    <th>P.Count</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Pen</td>
+                    <td rowspan="3">50</td>  > <!-- 3 sütunu birleştirdi-->
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Book</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Dust</td>
+                </tr>
+        </table>
+
+        <div class="divOzellik">div etiketi kullanımı</div>
+        <div class="divOzellik2">örnek div 2</div>
+        
+        <h3>Form Etiketi Kullanımı</h3>
+        <form>
+           Adınız:<input type="text"> <br>
+           <input type="email" placeholder="email">
+           <input type="password" placeholder="Şifreniz"> <br>
+           Kitap okumak<input type="checkbox">
+           Film İzlemek<input type="checkbox"><br><br>
+           kadın <input type="radio" name="cinsiyet" checked="true"> <!--checked=true ile kadın seçili olarak geliyor-->
+           erkek <input type="radio" name="cinsiyet"><br> <!--name aynı değer verilerek tek bir seçenek seçilmesi sağlanıyor-->
+           <input type="file"> <br><br>
+           
+           <textarea name="mesajInput" id="mesajAlani" cols="30" rows="5"></textarea> <br><br>
+            İçecek seçiniz:
+           <select>
+                <option value="Çay">Çay</option>
+                <option value="Kahve">Kahve</option>
+                <option value="Süt">Süt</option>
+            </select> <br><br>
+            <input type="submit" value="Gönder">
+           <input type="reset" name="Temizle"> 
+        </form>
+        <br><br><br>
+
+        <div class="formDiv">
+            <table>
+                <tr>
+                    <td>Adınız:</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr></tr>
+                    <td>Soyadınız:</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>Email Adres:</td>
+                    <td><input type="email"></td>
+                </tr>
+                <tr>
+                    <td>cinsiyet:</td>
+                    <td>
+                        <input id="kadinRadio" type="radio" name="cinsiyetRadio" value="Kadın">
+                        <label for="kadinRadio">Kadın</label>
+                        <input id="erkekRadio" type="radio" name="cinsiyetRadio" value="Erkek">
+                        <label for="erkekRadio">Erkek</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Doğum Tarihi:</td>
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+                    <th colspan="2">Hobiler</th>
+                </tr>
+                <tr>
+                    <td>Kitap okumak</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr></tr>
+                    <td>Spor yapmak</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="file"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><textarea name="" id="" cols="30" rows="10" placeholder="Mesajınız"></textarea></td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="sozlesme">Okudum,onaylıyorum</td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="sozlesme">Okudum,onaylamıyorum</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="Gönder">
+                        <input type="reset" value="Temizle">
+                    </td>
+                </tr>
+            </table>
+        </form>
+        </div>
+</body>
+</html>
